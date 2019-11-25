@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo3"></p>
+
+<script>
+
+function funk3(num, lista) {
+    //operacije
+    var math = {
+        '+': function (x, y) { return x + y },
+        '-': function (x, y) { return x - y },
+        '*': function (x, y) { return x * y },
+        '/': function (x, y) { return x / y },
+        '%': function (x, y) { return x % y },
+        '++': function (x) { return x++ },
+        '--': function (x) { return x-- }
+    }
+    var i;
+    var num_rst = num;
+
+    for(i=0; i<lista.length; i++) {
+        //izvrsi operaciju defiinisanu operatorom i dodeli novu vrednost
+        num = math[lista[i]["operator"]](num, lista[i]["operand"])
+        if(lista[i]["reset"] == true)
+            num = num_rst
+    }
+    return num
+}
+
+var niz = [{"operand": 10, "operator": '*', "reset": false},
+           {"operand": -8, "operator": '++', "reset": false},
+           {"operand": 1.5, "operator": '*', "reset": true}]
+
+document.getElementById("demo3").innerHTML = funk3(20, niz);
+
+
+</script>
+
+</body>
+</html>

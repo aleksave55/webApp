@@ -1,0 +1,23 @@
+Zadatak 1 -
+Napraviti repliku web strane sa slike zadatak_1.png 
+Boja okvira: default ljubicasta
+
+Zadatak 2 - 
+Napraviti repliku web strane sa slike zadatak_2.png
+Boja pozadine: bbbbbb
+Boja forme: ffbb55
+
+Opcije u dropdown listi: zemlje bivše SFRJ - Srbija, CG, BiH, Hrvatska, Slovenija, Makedonija.
+Default opcije Srbija, Muški pol, Čokolada.
+
+Zadatak 4 -
+Napraviti repliku web strane sa slike zadatak_4.png
+1) Linkovi iznad horizontalne linije treba da vode do fajlova prva tri zadatka.
+2) Video klipovi treba da zauzmu po 50% sirine ekrana i visine 300px.
+Mala pomoc: postaviti sledecu stilsku odrednicu za iframe: box-sizing:border-box;
+
+3) Linkovi video klipova:
+    Video 1: https://www.youtube.com/watch?v=sY1S34973zA
+    Video 2: https://www.youtube.com/watch?v=zAGVQLHvwOY
+    Video 3: https://www.youtube.com/watch?v=V75dMMIW2B4
+    Video 4: https://www.youtube.com/watch?v=9CiW_DgxCnQ

@@ -1,0 +1,14 @@
+U folderu images, data je slika - westeros.jpg
+Na slici je dat prikaz 9 oblasti Westerosa iz serijala Game of Thrones.
+Mapirati oblasti na slici tako da kada se klikne na unutrašnjost grba odgovarajuće kuće, on vodi na stranu sa https://gameofthrones.fandom.com/wiki/ posvećen traženoj kući, npr. https://gameofthrones.fandom.com/wiki/House_Lannister. Nije neophodno da svaki deo grba bude clickable, već samo njegov najveći centralni deo (pravilan oblik).
+
+Spisak linkova:
+https://gameofthrones.fandom.com/wiki/House_Stark
+https://gameofthrones.fandom.com/wiki/House_Greyjoy
+https://gameofthrones.fandom.com/wiki/House_Tully
+https://gameofthrones.fandom.com/wiki/House_Arryn
+https://gameofthrones.fandom.com/wiki/House_Lannister
+https://gameofthrones.fandom.com/wiki/House_Targaryen
+https://gameofthrones.fandom.com/wiki/House_Tyrell
+https://gameofthrones.fandom.com/wiki/House_Baratheon
+https://gameofthrones.fandom.com/wiki/House_Martell

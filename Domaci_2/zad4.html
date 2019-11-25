@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Zadatak 4 </title>
+<script>
+function funk4(slika, visina, sirina) {
+    function show_image(src, height, width) {
+        var img = document.createElement("img");
+        img.src = src;
+        img.width = width;
+        img.height = height;
+
+        document.body.appendChild(img);
+    }
+
+    if(slika=="" || visina=="" || sirina=="") {
+        alert("Potrebno je popuniti sva polja!")
+        return
+    }
+    //validacija unosa naziva slike
+    var slike = ["image_1", "image_2", "image_3", "image_4"]
+    if(!slike.includes(slika)) {
+        alert("Uneta slika ne postoji!")
+        return
+    }
+
+    //validacija velicine slike
+    if(visina<256 || visina>1024 || sirina<256 || sirina>1024) {
+        alert("Dimenzije slike izlaze iz predvidjenih opsega")
+        return
+    }
+
+    //ocisti ekran
+    document.body.innerHTML = "";
+
+    //pretpostavka je da sve slike imaju ekstenziju ".jpg" i sacuvane su u direktorijumu "slike/"
+    slika = "slike/"+slika+".jpg"
+    show_image(slika, visina, sirina)
+}
+</script>
+</head>
+
+<body>
+    <label> Image </label>
+    <input type="text" id="image"><br><br>
+    <label> Height </label>
+    <input type="text" id="height"><br><br>
+    <label> Width </label>
+    <input type="text" id="width"><br><br>
+    <button id="submit-button"
+    onclick="funk4(document.getElementById('image').value,document.getElementById('height').value, document.getElementById('width').value)">
+        Show an image</button>
+</body>
+
+</html>

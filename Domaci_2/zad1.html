@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="zad1"></p>
+
+<script>
+function funk1(stringovi) {
+  var i;
+  var str_len;
+  var izlaz = {};
+
+  for(i=0; i<stringovi.length; i++) {
+      //clan liste je nista, postavi ga da bude prazan string
+      if(stringovi[i]==undefined)
+          stringovi[i] = ""
+
+      str_len = stringovi[i].length;
+      
+      if(Object.keys(izlaz).includes(str_len.toString())) {
+          //vec postoji string sa istom duzinom
+          izlaz[str_len.toString()].push(stringovi[i]);
+                //dodaj novi string na kraj postojece liste
+      }
+      else {
+          //napravi listu pod kljucem duzine novog stringa
+          izlaz[str_len.toString()] = [stringovi[i]];
+      }
+  }
+  return izlaz;
+}
+
+lista = ["a", ,"mika", "pera", "zika", "laza", "zoki", "jovan", "bojan", "aca", "e"]
+
+document.getElementById("zad1").innerHTML = JSON.stringify(funk1(lista), null, "\t");
+</script>
+
+</body>
+</html>

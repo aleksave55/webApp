@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="zad2"></p>
+
+<script>
+
+function funk2(niz, dani) {
+    if(!(dani>1 && dani%1===0)) {
+        alert("Broj dana treba da bude pozitivan ceo broj")
+        return ""
+    }
+    
+    var k;
+    var i;
+    for(k=0; k<dani; k++) {
+        for(i=0; i<niz.length; i++) {
+            if((i+1) % (k+1) == 0) {
+                if(niz[i]!=0 && niz[i]!=1) {
+                    alert("Uneta lista moze da sadrzi samo 0 i 1")
+                    return ""
+                }
+                niz[i] = !niz[i]            //invertuj vrednost
+                niz[i] = niz[i] ? 1 : 0     //bool vrednost vrati u binarnu
+            }
+        }
+    }
+    return niz;
+}
+
+lista = [0,0,0,0,0,0,0]
+broj_dana = 5
+document.getElementById("zad2").innerHTML = funk2(lista, broj_dana);
+</script>
+
+</body>
+</html>
